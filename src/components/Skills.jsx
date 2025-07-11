@@ -154,7 +154,7 @@ const Skills = () => {
               <div className="row align-items-center">
                 <div className="col-md-6">
                   <img 
-                    src={item.image} 
+                    src={`${process.env.PUBLIC_URL}/${item.image}`}
                     alt={item.title} 
                     className="img-fluid rounded shadow"
                     style={{width:'500px', height:'300px'}}

@@ -9,7 +9,7 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 const Home = () => {
   const competences = [
     {
-      img: '/assets/code.png',
+      img: 'assets/code.png',
       title: 'Desarollo de software',
       description: 'Aplicaciones completas y escalables',
       path: "/skills#software-dev",
@@ -90,7 +90,7 @@ const Home = () => {
     <>
 
       <div className="container-fluid" style={{
-        backgroundImage: `url('assets/jeff2.png')`,
+        backgroundImage: `url(${process.env.PUBLIC_URL}/assets/jeff2.png)`,
         marginTop: '-75px',
         paddingTop: '290px',
         paddingBottom: '290px',
@@ -125,7 +125,7 @@ const Home = () => {
       <div data-scroll="fade-in" className="container delay-200" style={{ marginTop: '180px' }}>
         <div className="row mt-5 fade-in">
           <div className="col-md-4 ps-5">
-            <img src="assets/jeff3.jpg" className="img-fluid" alt="Responsive image"></img>
+            <img src={`${process.env.PUBLIC_URL}/assets/jeff3.jpg`} className="img-fluid" alt="Responsive image"></img>
           </div>
           <div className="col-md-8 p-sm-5 ">
             <h2 className="mb-4">About Me</h2>
@@ -160,7 +160,7 @@ const Home = () => {
             <div data-scroll="fade-in" className="col-md-4 p-sm-5">
               <div className="card text-light p-4 h-100 card-hover-effect" style={{ width: '18rem;', backgroundColor: '#070707' }}>
                 <div className="card-body">
-                  <img src={competences.img} className="card-img-top pb-3" alt="..." style={{ width: '70px' }}></img>
+                  <img src={`${process.env.PUBLIC_URL}/${competences.img}`} className="card-img-top pb-3" alt="..." style={{ width: '70px' }}></img>
 
                   <h5 className="card-title">{competences.title}</h5>
                   <p className="card-text">{competences.description}</p>
@@ -192,7 +192,7 @@ const Home = () => {
               <div className="container" data-scroll="fade-in" style={{ marginTop: '180px' }}>
                 <div className="row">
                   <div className="col-md-6">
-                    <img src={offers.img} style={{ width: '300px' }} alt="" />
+                    <img src={`${process.env.PUBLIC_URL}/${offers.img}`} style={{ width: '300px' }} alt="" />
                   </div>
                   <div className="col-md-6 text-start">
                     <h2>{offers.title}</h2>
