@@ -77,15 +77,15 @@ const Header = () => {
             </li>
             
             <li className="nav-item">
-              <Link className="nav-link text-white" to="/about">Sobre Mí</Link>
+              <Link className="nav-link text-white" to="/portfolio/about">Sobre Mí</Link>
             </li>
             
             <li className="nav-item">
-              <Link className="nav-link text-white" to="/contact">Contacto</Link>
+              <Link className="nav-link text-white" to="/portfolio/contact">Contacto</Link>
             </li>
             
             <li className="nav-item">
-              <Link className="nav-link text-white" to="/cv">CV</Link>
+              <Link className="nav-link text-white" to="/portfolio/cv">CV</Link>
             </li>
             
             <li 
@@ -99,14 +99,14 @@ const Header = () => {
               <div className={`dropdown-menu glassmorphic-dropdown ${skillsOpen ? 'show' : ''}`}>
                 <Link 
                   className="dropdown-item glassmorphic-dropdown-item" 
-                  to="/skills#software-dev"
+                  to="/portfolio/skills#software-dev"
                   onClick={() => setSkillsOpen(false)}
                 >
                   Desarrollo de Software
                 </Link>
                 <Link 
                   className="dropdown-item glassmorphic-dropdown-item" 
-                  to="/skills#data-analytics"
+                  to="/portfolio/skills#data-analytics"
                   onClick={() => setSkillsOpen(false)}
                 >
                   Análisis de Datos

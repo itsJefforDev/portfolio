@@ -12,20 +12,20 @@ const Home = () => {
       img: 'assets/code.png',
       title: 'Desarollo de software',
       description: 'Aplicaciones completas y escalables',
-      path: "/skills#software-dev",
+      path: "/portfolio/skills#software-dev",
     },
     {
       img: 'assets/maintenance.png',
       title: 'Manten. software',
       description: 'Optimizacion de equipos y reparacion',
-      path: "/skills#software-maintenance"
+      path: "/portfolio/skills#software-maintenance"
 
     },
     {
       img: 'assets/analytics.png',
       title: 'Analitica de datos',
       description: 'Reporteria de datos estadisticos dinamicos',
-      path: "/skills#data-analytics"
+      path: "/portfolio/skills#data-analytics"
     },
   ]
 
@@ -34,19 +34,19 @@ const Home = () => {
       img: 'assets/app-development.png',
       title: 'Desarollo FullStack',
       description: 'Conocimiento en desarrollo de aplicaciones web tanto de lado backend como fronend, uso de IDE como visual studio code, netbeans y visual studio en entornos de aplicaciones de escritorio',
-      path: "/skills#software-dev",
+      path: "/portfolio/skills#software-dev",
     },
     {
       img: 'assets/analytics (1).png',
       title: 'Analitica',
       description: 'Fuertes capacidades analíticas ante diversos problemas usando apps de herramientas de inteligencia de negocio como Excel, power bi y looker Studio para realizar informes complejos.',
-      path: "/skills#data-analytics"
+      path: "/portfolio/skills#data-analytics"
     },
     {
       img: 'assets/maintenance-support.png',
       title: 'Soporte TIC',
       description: 'Gran habilidad para resolución de problemas informáticos relacionado a computadoras con capacidad de realizar procedimientos técnicos con la finalidad de que los equipos funcionen correctamente.',
-      path: "/skills#software-maintenance"
+      path: "/portfolio/skills#software-maintenance"
 
     },
   ]
