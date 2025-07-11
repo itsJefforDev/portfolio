@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/itsJefforDev/portfolio.git/static/css/main.1eb36a77.css",
-    "main.js": "/itsJefforDev/portfolio.git/static/js/main.ca7cb17f.js",
-    "static/js/453.9b639b8f.chunk.js": "/itsJefforDev/portfolio.git/static/js/453.9b639b8f.chunk.js",
-    "static/media/slick.svg": "/itsJefforDev/portfolio.git/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/itsJefforDev/portfolio.git/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/itsJefforDev/portfolio.git/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/itsJefforDev/portfolio.git/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/itsJefforDev/portfolio.git/index.html",
-    "main.1eb36a77.css.map": "/itsJefforDev/portfolio.git/static/css/main.1eb36a77.css.map",
-    "main.ca7cb17f.js.map": "/itsJefforDev/portfolio.git/static/js/main.ca7cb17f.js.map",
-    "453.9b639b8f.chunk.js.map": "/itsJefforDev/portfolio.git/static/js/453.9b639b8f.chunk.js.map"
+    "main.css": "/portfolio/static/css/main.6cc5bcda.css",
+    "main.js": "/portfolio/static/js/main.dd38b22b.js",
+    "static/js/453.9b639b8f.chunk.js": "/portfolio/static/js/453.9b639b8f.chunk.js",
+    "static/media/slick.svg": "/portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/portfolio/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/portfolio/index.html",
+    "main.6cc5bcda.css.map": "/portfolio/static/css/main.6cc5bcda.css.map",
+    "main.dd38b22b.js.map": "/portfolio/static/js/main.dd38b22b.js.map",
+    "453.9b639b8f.chunk.js.map": "/portfolio/static/js/453.9b639b8f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1eb36a77.css",
-    "static/js/main.ca7cb17f.js"
+    "static/css/main.6cc5bcda.css",
+    "static/js/main.dd38b22b.js"
   ]
 }
