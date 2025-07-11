@@ -9,7 +9,7 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 const Home = () => {
   const competences = [
     {
-      img: 'assets/code.png',
+      img: '/assets/code.png',
       title: 'Desarollo de software',
       description: 'Aplicaciones completas y escalables',
       path: "/skills#software-dev",
@@ -125,7 +125,7 @@ const Home = () => {
       <div data-scroll="fade-in" className="container delay-200" style={{ marginTop: '180px' }}>
         <div className="row mt-5 fade-in">
           <div className="col-md-4 ps-5">
-            <img src="assets/jeff3.jpg" class="img-fluid" alt="Responsive image"></img>
+            <img src="assets/jeff3.jpg" className="img-fluid" alt="Responsive image"></img>
           </div>
           <div className="col-md-8 p-sm-5 ">
             <h2 className="mb-4">About Me</h2>
@@ -158,12 +158,12 @@ const Home = () => {
         <div className="row">
           {competences.map((competences) => (
             <div data-scroll="fade-in" className="col-md-4 p-sm-5">
-              <div class="card text-light p-4 h-100 card-hover-effect" style={{ width: '18rem;', backgroundColor: '#070707' }}>
-                <div class="card-body">
-                  <img src={competences.img} class="card-img-top pb-3" alt="..." style={{ width: '70px' }}></img>
+              <div className="card text-light p-4 h-100 card-hover-effect" style={{ width: '18rem;', backgroundColor: '#070707' }}>
+                <div className="card-body">
+                  <img src={competences.img} className="card-img-top pb-3" alt="..." style={{ width: '70px' }}></img>
 
-                  <h5 class="card-title">{competences.title}</h5>
-                  <p class="card-text">{competences.description}</p>
+                  <h5 className="card-title">{competences.title}</h5>
+                  <p className="card-text">{competences.description}</p>
                   <Link
                     to={competences.path}
                     className="btn btn-primary align-self-start mt-auto"
