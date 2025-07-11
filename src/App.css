@@ -1,38 +1,318 @@
-.App {
-  text-align: center;
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 80px;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Scroll Behavior */
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Header Styles */
+.navbar {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 20px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.solid-black-nav {
+  background-color: rgba(0, 0, 0, 1) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.scrolled-nav {
+  background-color: rgba(0, 0, 0, 0.85) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 12px 0;
+}
+
+/* Text Styles */
+.navbar-brand,
+.nav-link,
+.dropdown-toggle {
+  color: rgba(255, 255, 255, 0.95) !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.nav-link {
+  margin: 0 12px;
+  font-weight: 500;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Dropdowns */
+.glassmorphic-dropdown {
+  background: rgba(0, 0, 0, 0.8) !important;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 0;
+  overflow: hidden;
+  margin-top: 8px !important;
+}
+
+.glassmorphic-dropdown-item {
+  color: rgba(255, 255, 255, 0.9) !important;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.glassmorphic-dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: #fff !important;
+  padding-left: 25px;
+}
+
+/* Scroll Animations */
+[data-scroll] {
+  opacity: 0;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-scroll="fade-in"] {
+  transform: translateY(30px);
+}
+
+[data-scroll="fade-left"] {
+  transform: translateX(-30px);
+}
+
+[data-scroll="fade-right"] {
+  transform: translateX(30px);
+}
+
+[data-scroll="scale-in"] {
+  transform: scale(0.95);
+}
+
+[data-scroll].animated {
+  opacity: 1;
+  transform: translateY(0) translateX(0) scale(1);
+}
+
+/* Animation Delays */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+.delay-500 { transition-delay: 500ms; }
+
+/* Main Content */
+.main-content {
+  min-height: calc(100vh - 200px);
+  padding: 40px 0;
+}
+
+/* Timeline Styles */
+.timeline-container {
+  position: relative;
+  padding-left: 50px;
+  margin-top: 40px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-point {
+  position: absolute;
+  left: -40px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #000;
+  z-index: 1;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-line {
+  position: absolute;
+  left: -32px;
+  top: 21px;
+  bottom: -40px;
+  width: 2px;
+  background-color: #000;
+  opacity: 0.2;
+}
+
+/* Progress Bars */
+.progress {
+  height: 8px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background-color: #000;
+  transition: width 0.8s ease;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
   color: white;
+  padding: 50px 0 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.social-links a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.25rem;
+  margin-right: 15px;
+  transition: all 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.social-links a:hover {
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Buttons */
+.btn-dark {
+  background-color: #000;
+  border: none;
+  padding: 10px 24px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  body {
+    padding-top: 70px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .navbar-collapse {
+    background: rgba(0, 0, 0, 0.9) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
+    margin-top: 10px;
   }
+  
+  .nav-link {
+    margin: 5px 0;
+    padding: 8px 15px;
+  }
+  
+  .nav-link::after {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline-container {
+    padding-left: 30px;
+  }
+  
+  .timeline-point {
+    left: -25px;
+    width: 14px;
+    height: 14px;
+  }
+  
+  .timeline-line {
+    left: -18px;
+  }
+  
+  .main-content {
+    padding: 30px 0;
+  }
+  
+  /* Adjust animations for mobile */
+  [data-scroll] {
+    opacity: 1;
+    transform: none !important;
+  }
+}
+
+/* Utility Classes */
+.shadow-soft {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.02);
+}
+
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Animaciones para las cards */
+.card-hover-effect {
+  transition: all 0.3s ease;
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: #111111 !important; /* Un poco más claro que el fondo */
+}
+
+/* Transición para la imagen dentro de la card */
+.card-hover-effect img {
+  transition: transform 0.3s ease;
+}
+
+.card-hover-effect:hover img {
+  transform: scale(1.05);
+}
+
+/* Transición para el botón */
+.card-hover-effect .btn {
+  transition: all 0.3s ease;
+}
+
+.card-hover-effect:hover .btn {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
 }
