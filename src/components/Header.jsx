@@ -36,7 +36,7 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link className="nav-link text-white" to="/">Inicio</Link>
+              <Link className="nav-link text-white" to="/portfolio">Inicio</Link>
             </li>
             
             <li 
@@ -50,21 +50,21 @@ const Header = () => {
               <div className={`dropdown-menu glassmorphic-dropdown ${educationOpen ? 'show' : ''}`}>
                 <Link 
                   className="dropdown-item glassmorphic-dropdown-item" 
-                  to="/education#bachelor"
+                  to="/portfolio/education#bachelor"
                   onClick={() => setEducationOpen(false)}
                 >
                   Licenciatura
                 </Link>
                 <Link 
                   className="dropdown-item glassmorphic-dropdown-item" 
-                  to="/education#master"
+                  to="/portfolio/education#master"
                   onClick={() => setEducationOpen(false)}
                 >
                   Maestría
                 </Link>
                 <Link 
                   className="dropdown-item glassmorphic-dropdown-item" 
-                  to="/education#certifications"
+                  to="/portfolio/education#certifications"
                   onClick={() => setEducationOpen(false)}
                 >
                   Certificaciones
