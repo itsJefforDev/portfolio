@@ -60,13 +60,13 @@ function App() {
       <Header />
       <div className="app glassmorphic">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/experience" element={<Experience />} />
+          <Route path="/portfolio" element={<Home />} />
+          <Route path="/portfolio/about" element={<About />} />
+          <Route path="/portfolio/education" element={<Education />} />
+          <Route path="/portfolio/experience" element={<Experience />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/cv" element={<Cv />} />
-          <Route path="/skills" element={<Skills />} />
+          <Route path="/portfolio/cv" element={<Cv />} />
+          <Route path="/portfolio/skills" element={<Skills />} />
         </Routes>
         <Footer />
       </div>

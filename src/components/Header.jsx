@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <nav className={`navbar navbar-expand-lg fixed-top ${scrolled ? 'scrolled-nav' : 'solid-black-nav'}`}>
       <div className="container">
-        <Link className="navbar-brand text-white" to="/">Jeff</Link>
+        <Link className="navbar-brand text-white" to="/portfolio">Jeff</Link>
         
         <button 
           className="navbar-toggler" 
