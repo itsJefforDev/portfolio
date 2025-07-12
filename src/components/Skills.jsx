@@ -11,7 +11,7 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 const Skills = () => {
   const location = useLocation();
   const [activeSkill, setActiveSkill] = useState('software-dev');
-  
+
   // Actualizar el estado cuando cambia el hash en la URL
   useEffect(() => {
     const hash = location.hash.substring(1);
@@ -26,8 +26,8 @@ const Skills = () => {
       carouselItems: [
         {
           image: 'assets/uniCosmet.png',
-          title: 'Web Development',
-          description: 'Building responsive and interactive web applications'
+          title: 'Desarollo web',
+          description: 'Creacion de paginas responsivas e interactivas'
         },
         {
           image: 'assets/MERN.jpg',
@@ -42,39 +42,51 @@ const Skills = () => {
       ],
       summary: 'Conocimiento en desarrollo de aplicaciones web tanto de lado backend como fronend, uso de IDE como visual studio code, netbeans y visual studio en entornos de aplicaciones de escritorio.\n\n Tengo la capacidad para aprender e investigar las diferentes problemáticas que surgan en el ciclo de vida del software.\n\nActualmente me empeño en estudiar arduamente para aprender mas acerca del desarrollo de software, estudiando cada lenguaje y framework que sean posibles.',
       tools: [
-        { name: 'JavaScript', level: 90 },
-        { name: 'Python', level: 85 },
-        { name: 'React', level: 88 },
-        { name: 'Node.js', level: 82 },
-        { name: 'Django', level: 75 }
+        { img: 'assets/angular.png', name: 'Angular', level: 90 },
+        { img: 'assets/spring boott.png', name: 'Spring boot', level: 85 },
+        { img: 'assets/react.png', name: 'React', level: 88 },
+        { img: 'assets/express.png', name: 'Express.js', level: 82 },
+        { img: 'assets/nodejs.png', name: 'Node.js', level: 75 },
+        { img: 'assets/laravel.png', name: 'Laravel', level: 82 },
+        { img: 'assets/mysql.png', name: 'MySQL', level: 82 },
+        { img: 'assets/mongodb.png', name: 'MongoDB', level: 82 },
+        { img: 'assets/docker.png', name: 'Docker', level: 82 },
+        { img: 'assets/bootstrap.png', name: 'Bootstrap', level: 82 },
+        { img: 'assets/html.png', name: 'HTML', level: 82 },
+        { img: 'assets/css.png', name: 'CSS', level: 82 },
+        { img: 'assets/javascript.png', name: 'JavaScript', level: 82 },
+        { img: 'assets/typescript.png', name: 'Typescript', level: 82 },
+        { img: 'assets/java.png', name: 'Java', level: 82 },
+        { img: 'assets/intellij.png', name: 'Intellij IDEA', level: 82 },
+        { img: 'assets/netbeans.png', name: 'Netbeans', level: 82 },
+        { img: 'assets/postman.png', name: 'Postman', level: 82 },
+
       ]
     },
     'data-analytics': {
-      title: 'Data Analytics',
+      title: 'Analitica de datos',
       carouselItems: [
         {
-          image: '/data1.jpg',
-          title: 'Data Visualization',
-          description: 'Creating insightful visual representations of data'
+          image: 'assets/analitica.jpg',
+          title: 'Visualizacion de datos',
+          description: 'Visualizacion comoda y detallada de los datos'
         },
         {
-          image: '/data2.jpg',
-          title: 'Machine Learning',
-          description: 'Building predictive models and algorithms'
+          image: 'assets/filter2.png',
+          title: 'Segmentacion de datos',
+          description: 'Filtros personalidos para informacion especifica'
         },
         {
-          image: '/data3.jpg',
-          title: 'Data Cleaning',
-          description: 'Preparing raw data for analysis'
+          image: 'assets/customization2.png',
+          title: 'Customizacion',
+          description: 'Informes con diseños unicos'
         }
       ],
-      summary: 'I transform raw data into meaningful insights that drive business decisions. My analytical approach combines statistical methods with business acumen to deliver actionable results.',
+      summary: 'Fuertes capacidades analíticas ante diversos problemas usando apps de herramientas de inteligencia de negocio como Excel, power bi y looker Studio para realizar informes complejos y plasmarlos en dashboards dinámicos que facilitan la experiencia de usuario y a la resolución de problemas estadísticos.\n\n Capacidad para realizar formulas complejas y robustas tanto lógicas como matemáticas en Excel y power bi tales como buscarV, Extraer, Condicionales y aplicando la función de trabajo con macros para acelerar el proceso de automatización ETL.',
       tools: [
-        { name: 'SQL', level: 85 },
-        { name: 'Pandas', level: 88 },
-        { name: 'Tableau', level: 80 },
-        { name: 'Power BI', level: 75 },
-        { name: 'TensorFlow', level: 70 }
+        { img: 'assets/powerbi.png', name: 'Power BI', level: 75 },
+        { img: 'assets/lookerstudio.png', name: 'Looker Studio', level: 75 },
+        { img: 'assets/excel.png', name: 'Excel', level: 75 },
       ]
     },
     'software-maintenance': {
@@ -98,11 +110,11 @@ const Skills = () => {
       ],
       summary: 'Conocimiento en desarrollo de aplicaciones web tanto de lado backend como fronend, uso de IDE como visual studio code, netbeans y visual studio en entornos de aplicaciones de escritorio.\n\n Tengo la capacidad para aprender e investigar las diferentes problemáticas que surgan en el ciclo de vida del software.\n\nActualmente me empeño en estudiar arduamente para aprender mas acerca del desarrollo de software, estudiando cada lenguaje y framework que sean posibles.',
       tools: [
-        { name: 'Git', level: 90 },
-        { name: 'Docker', level: 85 },
-        { name: 'CI/CD', level: 80 },
-        { name: 'Testing', level: 88 },
-        { name: 'Security', level: 82 }
+        { img: 'assets/angular.png', name: 'Git', level: 90 },
+        { img: 'assets/angular.png', name: 'Docker', level: 85 },
+        { img: 'assets/angular.png', name: 'CI/CD', level: 80 },
+        { img: 'assets/angular.png', name: 'Testing', level: 88 },
+        { img: 'assets/angular.png', name: 'Security', level: 82 }
       ]
     }
   };
@@ -144,20 +156,20 @@ const Skills = () => {
 
   return (
     <div className="container">
-    
-      
-      <div className="glassmorphic p-5 rounded">
-        
+
+
+      <div className="glassmorphic rounded" style={{marginTop:'80px', marginBottom:'80px'}}>
+
         <Slider {...settings}>
           {currentSkill.carouselItems.map((item, index) => (
             <div key={index} className="px-4">
               <div className="row align-items-center">
                 <div className="col-md-6">
-                  <img 
+                  <img
                     src={`${process.env.PUBLIC_URL}/${item.image}`}
-                    alt={item.title} 
+                    alt={item.title}
                     className="img-fluid rounded shadow"
-                    style={{width:'500px', height:'300px'}}
+                    style={{ width: '500px', height: '300px' }}
                   />
                 </div>
                 <div className="col-md-6 p-5">
@@ -168,13 +180,13 @@ const Skills = () => {
             </div>
           ))}
         </Slider>
-        
+
       </div>
-      
-       
+
+
       <div className="d-flex justify-content-center my-5">
-        <div className="btn-group">
-          <button 
+        {/* <div className="btn-group">
+          <button
             className={`btn ${activeSkill === 'software-dev' ? 'btn-dark' : 'btn-outline-dark'}`}
             onClick={() => {
               setActiveSkill('software-dev');
@@ -183,7 +195,7 @@ const Skills = () => {
           >
             Desarollo de software
           </button>
-          <button 
+          <button
             className={`btn ${activeSkill === 'data-analytics' ? 'btn-dark' : 'btn-outline-dark'}`}
             onClick={() => {
               setActiveSkill('data-analytics');
@@ -192,7 +204,7 @@ const Skills = () => {
           >
             Analitica de datos
           </button>
-          <button 
+          <button
             className={`btn ${activeSkill === 'software-maintenance' ? 'btn-dark' : 'btn-outline-dark'}`}
             onClick={() => {
               setActiveSkill('software-maintenance');
@@ -201,19 +213,36 @@ const Skills = () => {
           >
             Mantenimiento de software
           </button>
+        </div> */}
+      </div>
+
+      <div data-scroll="fade-in" className="glassmorphic p-4 rounded mb-5" >
+        <h1 className="mb-5">{currentSkill.title}</h1>
+        <p className="lead text-secondary" style={{ whiteSpace: "pre-line" }}>{currentSkill.summary}</p>
+      </div>
+
+      <div data-scroll="fade-in" className="glassmorphic p-4 rounded" style={{ marginTop: '180px', marginBottom: '180px' }}>
+        <h1 className="mb-5">Herramientas y tecnologias</h1>
+        <div className="row">
+          {/* <Bar data={chartData} options={chartOptions} /> */}
+          {currentSkill.tools.map((tool, index) => (
+            <div data-scroll="fade-in" className="col-md-4">
+              <div key={index} className="card m-4 p-5" style={{ width: '18rem' }}>
+                <div className="d-flex justify-content-center">
+                  <img src={`${process.env.PUBLIC_URL}/${tool.img}`} className="card-img-top" alt={tool.name} style={{ width: '100px', height: '100px' }} />
+                </div>
+
+                <div className="card-body">
+                  <p className="card-text text-center">{tool.name}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
-      </div>
-      
-      <div className="glassmorphic p-4 rounded mb-5">
-        <h3 className="mb-3">{currentSkill.title}</h3>
-        <p className="lead" style={{ whiteSpace: "pre-line" }}>{currentSkill.summary}</p>
-      </div>
-      
-      <div className="glassmorphic p-4 rounded">
-        <h3 className="mb-4">Tools & Technologies</h3>
-        <Bar data={chartData} options={chartOptions} />
-        
-        <div className="mt-4">
+
+
+
+        {/* <div className="mt-4">
           {currentSkill.tools.map((tool, index) => (
             <div key={index} className="mb-3">
               <div className="d-flex justify-content-between mb-1">
@@ -221,9 +250,9 @@ const Skills = () => {
                 <span>{tool.level}%</span>
               </div>
               <div className="progress">
-                <div 
-                  className="progress-bar bg-dark" 
-                  role="progressbar" 
+                <div
+                  className="progress-bar bg-dark"
+                  role="progressbar"
                   style={{ width: `${tool.level}%` }}
                   aria-valuenow={tool.level}
                   aria-valuemin="0"
@@ -232,7 +261,7 @@ const Skills = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );

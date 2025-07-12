@@ -38,8 +38,41 @@ const Header = () => {
             <li className="nav-item">
               <Link className="nav-link text-white" to="/portfolio">Inicio</Link>
             </li>
-            
+
             <li 
+              className="nav-item dropdown"
+              onMouseEnter={() => setSkillsOpen(true)}
+              onMouseLeave={() => setSkillsOpen(false)}
+            >
+              <span className="nav-link dropdown-toggle text-white" role="button">
+                Habilidades
+              </span>
+              <div className={`dropdown-menu glassmorphic-dropdown ${skillsOpen ? 'show' : ''}`}>
+                <Link 
+                  className="dropdown-item glassmorphic-dropdown-item" 
+                  to="/portfolio/skills#software-dev"
+                  onClick={() => setSkillsOpen(false)}
+                >
+                  Desarrollo de Software
+                </Link>
+                <Link 
+                  className="dropdown-item glassmorphic-dropdown-item" 
+                  to="/portfolio/skills#data-analytics"
+                  onClick={() => setSkillsOpen(false)}
+                >
+                  Análisis de Datos
+                </Link>
+                {/* <Link 
+                  className="dropdown-item glassmorphic-dropdown-item" 
+                  to="/portfolio/skills#software-maintenance"
+                  onClick={() => setSkillsOpen(false)}
+                >
+                  Mantenimiento de Software
+                </Link> */}
+              </div>
+            </li>
+            
+            {/* <li 
               className="nav-item dropdown" 
               onMouseEnter={() => setEducationOpen(true)}
               onMouseLeave={() => setEducationOpen(false)}
@@ -70,56 +103,25 @@ const Header = () => {
                   Certificaciones
                 </Link>
               </div>
-            </li>
+            </li> */}
             
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link className="nav-link text-white" to="/portfolio/experience">Experiencia</Link>
-            </li>
+            </li> */}
             
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link className="nav-link text-white" to="/portfolio/about">Sobre Mí</Link>
-            </li>
+            </li> */}
             
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link className="nav-link text-white" to="/portfolio/contact">Contacto</Link>
-            </li>
+            </li> */}
             
             <li className="nav-item">
               <Link className="nav-link text-white" to="/portfolio/cv">CV</Link>
             </li>
             
-            <li 
-              className="nav-item dropdown"
-              onMouseEnter={() => setSkillsOpen(true)}
-              onMouseLeave={() => setSkillsOpen(false)}
-            >
-              <span className="nav-link dropdown-toggle text-white" role="button">
-                Habilidades
-              </span>
-              <div className={`dropdown-menu glassmorphic-dropdown ${skillsOpen ? 'show' : ''}`}>
-                <Link 
-                  className="dropdown-item glassmorphic-dropdown-item" 
-                  to="/portfolio/skills#software-dev"
-                  onClick={() => setSkillsOpen(false)}
-                >
-                  Desarrollo de Software
-                </Link>
-                <Link 
-                  className="dropdown-item glassmorphic-dropdown-item" 
-                  to="/portfolio/skills#data-analytics"
-                  onClick={() => setSkillsOpen(false)}
-                >
-                  Análisis de Datos
-                </Link>
-                <Link 
-                  className="dropdown-item glassmorphic-dropdown-item" 
-                  to="/skills#software-maintenance"
-                  onClick={() => setSkillsOpen(false)}
-                >
-                  Mantenimiento de Software
-                </Link>
-              </div>
-            </li>
+            
           </ul>
         </div>
       </div>

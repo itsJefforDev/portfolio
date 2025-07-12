@@ -80,7 +80,7 @@ html {
   border-radius: 8px;
   padding: 0;
   overflow: hidden;
-  margin-top: 8px !important;
+  margin-top: 0px !important;
 }
 
 .glassmorphic-dropdown-item {
